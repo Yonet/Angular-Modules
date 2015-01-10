@@ -142,12 +142,13 @@ header, footer {
 header h1, footer h1 {
   font-size: 2.5em;
   line-height: 1.2em;
-  padding: 20px 40%;
+  padding: 0 40% 10px 40%;
   background-color: #2F3134;
   width: 100%;
+  margin-top: 0;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .body-container {
   display: -webkit-flex;
   display: flex;
@@ -160,7 +161,7 @@ header h1, footer h1 {
   align-items: center;
   margin-top: 40px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .body-container h1 {
   font-size: 1.25em;
   line-height: 1.2em;
@@ -169,18 +170,18 @@ header h1, footer h1 {
   padding-left: 10px;
   display: inline-block;
 }
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .body-container.title {
   border-bottom: 1px solid #e4e4e4;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .post-container {
   width: 60%;
   height: 100%;
   border: 1px solid #e4e4e4;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .post-container p {
   display: inline-block;
   float: right;
@@ -190,6 +191,12 @@ header h1, footer h1 {
 }
 
 /* line 70, ../sass/screen.scss */
+.comments {
+  padding: 5px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* line 76, ../sass/screen.scss */
 img {
   position: relative;
   left: 50%;
