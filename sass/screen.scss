@@ -39,12 +39,12 @@ header, footer {
 	@include flex-wrap(wrap);
 	@include justify-content(center);
 	align-items: center;
-	margin-top: 60px;
+	margin-top: 40px;
 	h1 {
 		@include adjust-font-size-to(20px);
 		color: $base-text;
 		font-weight: $bold;
-		padding: 20px 0 20px 10px;
+		padding-left: 10px;
 		display: inline-block;
 		
 	}
@@ -66,13 +66,11 @@ header, footer {
 
 }
 
-// input, button {
-// 	width: 30%;
-// 	height: 20px;
-// }
+button {
 
+}
 
-img {
+img, button {
 		@include centre(x);
-		margin: 20px auto; 
+		padding: 20px; 
 	}

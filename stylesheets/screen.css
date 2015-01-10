@@ -158,7 +158,7 @@ header h1, footer h1 {
   -webkit-justify-content: center;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 /* line 43, ../sass/screen.scss */
 .body-container h1 {
@@ -166,7 +166,7 @@ header h1, footer h1 {
   line-height: 1.2em;
   color: #1c1c1c;
   font-weight: 500;
-  padding: 20px 0 20px 10px;
+  padding-left: 10px;
   display: inline-block;
 }
 /* line 51, ../sass/screen.scss */
@@ -189,8 +189,8 @@ header h1, footer h1 {
   padding: 15px 10px;
 }
 
-/* line 75, ../sass/screen.scss */
-img {
+/* line 73, ../sass/screen.scss */
+img, button {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -198,5 +198,5 @@ img {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  margin: 20px auto;
+  padding: 20px;
 }
