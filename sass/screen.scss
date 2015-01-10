@@ -58,7 +58,7 @@ header, footer {
 	width: 60%;
 	height: 100%;
 	border: 1px solid $border-color;
-	p {
+	like {
 		display: inline-block;
 		float: right;
 		@include justify-content(flex-end);
@@ -70,6 +70,10 @@ header, footer {
 .comments {
 	padding: 5px;
 	border-bottom: 1px solid $border-color;
+}
+
+.liked {
+	color: red;
 }
 
 

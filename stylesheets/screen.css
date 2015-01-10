@@ -182,7 +182,7 @@ header h1, footer h1 {
   border: 1px solid #e4e4e4;
 }
 /* line 61, ../sass/screen.scss */
-.post-container p {
+.post-container like {
   display: inline-block;
   float: right;
   -webkit-justify-content: flex-end;
@@ -196,7 +196,12 @@ header h1, footer h1 {
   border-bottom: 1px solid #e4e4e4;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
+.liked {
+  color: red;
+}
+
+/* line 80, ../sass/screen.scss */
 img {
   position: relative;
   left: 50%;

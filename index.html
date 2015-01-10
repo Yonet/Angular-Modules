@@ -21,16 +21,16 @@
             <div ng-repeat="cat in cats" class='post-container'>
                 <div class="title">
                     <h1>{{ cat.title }}</h1>
-                    <p>{{ cat.likes }} <span ng-click="like($index)">like</span></p>
+                    <like>{{ cat.likes }} <span ng-click="like($index)">like</span></like>
                 </div>
                 <img src="{{cat.url}}"/>
                 <!-- <input ng-model="newComment" placeholder="Comment" class="form-control"/> -->
                 <form ng-submit="submitComment(comment.text)">
-                    <input ng-model="comment.text" placeholder="Write a comment..." class="form-control" rows="3" ng-mouseenter="submitComment"/>
+                    <input ng-model="cat.comment" placeholder="Write a comment..." class="form-control" rows="3" ng-mouseenter="submitComment"/>
                     
                 </form>
                 <div class="comments" ng-repeat="message in comments">{{ message }}</div>
-                
+
 
             </div>
         </div>

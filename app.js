@@ -25,3 +25,15 @@ app.controller('CatController', ['$scope', '$http', function($scope, $http){
 		$scope.comment.text = "";
 	}
 }]);
+
+app.directive('like', [function(){
+	var link = function(scope, element, attrs) {
+		element.bind('mousedown', function(){
+			element.addClass('liked');
+		})
+	}
+	return {
+		restrict:"AE",
+		link: link
+	}
+}])
