@@ -66,11 +66,8 @@ header, footer {
 
 }
 
-button {
 
-}
-
-img, button {
+img{
 		@include centre(x);
 		padding: 20px; 
 	}

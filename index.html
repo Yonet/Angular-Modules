@@ -12,18 +12,21 @@
     </header>
     <body ng-app='catstagram'>
         <div ng-controller="CatController" class="body-container">
-            <div class='post-container '>
+            <form class="form-inline post-container">
                 <input ng-model="newCat.title" placeholder="Title" class="form-control"/>
                 <input ng-model="newCat.url" placeholder="Url" class="form-control"/>
                 <p>{{ newCat.title }} {{newCat.url}}</p>
                 <button ng-click="addCat(newCat)" class="btn btn-success">Submit</button>
-            </div>
+            </form>
             <div ng-repeat="cat in cats" class='post-container'>
                 <div class="title">
                     <h1>{{ cat.title }}</h1>
                     <p>{{ cat.likes }} <span ng-click="like($index)">like</span></p>
                 </div>
                 <img src="{{cat.url}}"/>
+                <!-- <input ng-model="newComment" placeholder="Comment" class="form-control"/> -->
+                <textarea ng-model="newComment" placeholder="Comment" class="form-control" rows="3" ng-mouseenter="submitComment"></textarea>
+
             </div>
         </div>
     </body>

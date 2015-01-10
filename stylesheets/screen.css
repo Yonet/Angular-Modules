@@ -189,8 +189,8 @@ header h1, footer h1 {
   padding: 15px 10px;
 }
 
-/* line 73, ../sass/screen.scss */
-img, button {
+/* line 70, ../sass/screen.scss */
+img {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
