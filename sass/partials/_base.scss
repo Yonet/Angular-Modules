@@ -131,7 +131,7 @@ i.help {
 //Centre anything
 // Usage: @include centre(y)/@include centre(x)/@include centre() for both x and y
 @mixin centre($axis: "both"){
-    position:absolute;
+    position:relative;
     @if $axis == "y"{
         top:50%;
         -webkit-transform: translateY(-50%);

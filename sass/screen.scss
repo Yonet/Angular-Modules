@@ -11,10 +11,9 @@
 
 header {
 	border-bottom: 4px solid $border-color;
-	color: $header-font-color;
+	color: $text-disabled;
 	line-height: $base-line-height;
 	font-size: $base-font-size;
-	
 	font-family: $base-font-family;
 	font-weight: $header-font-weight;
 	@include display-flex;
@@ -26,16 +25,12 @@ header, footer, body {
 
 header, footer {
 	background-color: $dark-background-color;
-}
-
-
-h1 {
-	
-	@include centre(x);
-	@include adjust-font-size-to(20px);
-	padding-top: 40px;
-	color: $base-text;
-	font-weight: $bold;
+	h1 {
+		@include adjust-font-size-to(40px);
+		padding: 20px 40%;
+		background-color: $dark-background-color;
+		width: 100%;
+	}
 }
 
 .body-container {
@@ -44,10 +39,40 @@ h1 {
 	@include flex-wrap(wrap);
 	@include justify-content(center);
 	align-items: center;
+	margin-top: 60px;
+	h1 {
+		@include adjust-font-size-to(20px);
+		color: $base-text;
+		font-weight: $bold;
+		padding: 20px 0 20px 10px;
+		display: inline-block;
+		
+	}
+	&.title {
+		border-bottom: 1px solid $border-color;
+	}
 }
 
 .post-container {
 	width: 60%;
 	height: 100%;
 	border: 1px solid $border-color;
+	p {
+		display: inline-block;
+		float: right;
+		@include justify-content(flex-end);
+		padding: 15px 10px; 
+	}
+
 }
+
+// input, button {
+// 	width: 30%;
+// 	height: 20px;
+// }
+
+
+img {
+		@include centre(x);
+		margin: 20px auto; 
+	}

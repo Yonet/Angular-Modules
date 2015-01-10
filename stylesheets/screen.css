@@ -117,7 +117,7 @@ i.help {
 /* line 12, ../sass/screen.scss */
 header {
   border-bottom: 4px solid #e4e4e4;
-  color: #777777;
+  color: #a1a1a1;
   line-height: 24px;
   font-size: 16px;
   font-family: Helvetica Neue;
@@ -128,34 +128,26 @@ header {
   flex-direction: column;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 header, footer, body {
   -webkit-flex: 1 0 100%;
   flex: 1 0 100%;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 header, footer {
   background-color: #2F3134;
 }
-
-/* line 32, ../sass/screen.scss */
-h1 {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 1.25em;
+/* line 28, ../sass/screen.scss */
+header h1, footer h1 {
+  font-size: 2.5em;
   line-height: 1.2em;
-  padding-top: 40px;
-  color: #1c1c1c;
-  font-weight: 500;
+  padding: 20px 40%;
+  background-color: #2F3134;
+  width: 100%;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .body-container {
   display: -webkit-flex;
   display: flex;
@@ -166,11 +158,45 @@ h1 {
   -webkit-justify-content: center;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+}
+/* line 43, ../sass/screen.scss */
+.body-container h1 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  color: #1c1c1c;
+  font-weight: 500;
+  padding: 20px 0 20px 10px;
+  display: inline-block;
+}
+/* line 51, ../sass/screen.scss */
+.body-container.title {
+  border-bottom: 1px solid #e4e4e4;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .post-container {
   width: 60%;
   height: 100%;
   border: 1px solid #e4e4e4;
+}
+/* line 60, ../sass/screen.scss */
+.post-container p {
+  display: inline-block;
+  float: right;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding: 15px 10px;
+}
+
+/* line 75, ../sass/screen.scss */
+img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 20px auto;
 }
