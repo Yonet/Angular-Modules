@@ -1,0 +1,53 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+//Modules
+@import "partials/base.scss";
+
+header {
+	border-bottom: 4px solid $border-color;
+	color: $header-font-color;
+	line-height: $base-line-height;
+	font-size: $base-font-size;
+	
+	font-family: $base-font-family;
+	font-weight: $header-font-weight;
+	@include display-flex;
+	@include flex-direction(column);
+}
+header, footer, body {
+    @include flex(1 0 100%);
+}
+
+header, footer {
+	background-color: $dark-background-color;
+}
+
+
+h1 {
+	
+	@include centre(x);
+	@include adjust-font-size-to(20px);
+	padding-top: 40px;
+	color: $base-text;
+	font-weight: $bold;
+}
+
+.body-container {
+	@include display-flex;
+	@include flex-direction(column);
+	@include flex-wrap(wrap);
+	@include justify-content(center);
+	align-items: center;
+}
+
+.post-container {
+	width: 60%;
+	height: 100%;
+	border: 1px solid $border-color;
+}
